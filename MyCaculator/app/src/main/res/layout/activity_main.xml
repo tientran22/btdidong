@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#3F51B5"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ED6237"
+        android:text="SO HOC DON GIAN"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        >
+
+        <TextView
+            android:id="@+id/tvSoA"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="A ="
+            android:textAlignment="center"
+            android:textColor="#171313"
+            android:textSize="26dp"
+            android:background="@drawable/vien"
+            android:layout_marginRight="8dp"
+            android:padding="16dp"
+            ></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edSoA"
+            android:background="@drawable/border"
+            android:textSize="26dp"
+            android:padding="16dp"
+            >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tvSoB"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="B ="
+            android:textAlignment="center"
+            android:textColor="#171313"
+            android:textSize="26dp"
+            android:background="@drawable/vien"
+            android:layout_marginRight="8dp"
+            android:padding="16dp"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/edSoB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="16dp"
+            android:textSize="26dp"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/BtnCong"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:backgroundTint="#FFC107"
+            android:layout_marginLeft="16dp"
+            android:onClick="XuLyCong"
+            android:text="+"
+            android:textSize="24sp">
+        </Button>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:text="-"
+            android:id="@+id/BtnTru"
+            android:onClick="XuLyTru"
+            android:textSize="24dp"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="#358740">
+        </Button>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:text="*"
+            android:id="@+id/BtnNhan"
+            android:onClick="XuLyNhan"
+            android:textSize="24dp"
+            android:layout_marginLeft="4dp"
+            android:backgroundTint="#358740">
+        </Button>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:text="/"
+            android:id="@+id/BtnChia"
+            android:onClick="XuLyChia"
+            android:textSize="24dp"
+            android:layout_marginLeft="4dp"
+            android:backgroundTint="#358740">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvKQ"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/vien"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:onClick="ketQua"
+        android:padding="16dp"
+        android:text="KET QUA"
+        android:textColor="#171313"></TextView>
+
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="16dp"
+        android:layout_marginRight="16dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="16dp"
+        android:textSize="32dp"></TextView>
+</LinearLayout>
