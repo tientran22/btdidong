@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#3F51B5">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#B7FF9800"
+        android:gravity="center"
+        android:text="SO HOC DON GIAN"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/vien"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="A ="
+        android:textAlignment="center"
+        android:textColor="#171313"
+        android:textSize="26dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edSoA"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/border"
+        android:padding="16dp"
+        android:textSize="26dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvSoA"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"></EditText>
+
+    <TextView
+        android:id="@+id/tvSoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/vien"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="B ="
+        android:textAlignment="center"
+        android:textColor="#171313"
+        android:textSize="26dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSoA" />
+
+    <EditText
+        android:id="@+id/edSoB"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/border"
+        android:padding="16dp"
+        android:textSize="26dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvSoB"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edSoA"></EditText>
+
+    <Button
+        android:id="@+id/BtnCong"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FFC107"
+        android:onClick="XuLyCong"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSoB"></Button>
+
+    <Button
+        android:id="@+id/BtnTru"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="XuLyTru"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/BtnCong"
+        app:layout_constraintTop_toBottomOf="@id/edSoB"></Button>
+
+    <Button
+        android:id="@+id/BtnNhan"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="XuLyNhan"
+        android:text="*"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/BtnTru"
+        app:layout_constraintTop_toBottomOf="@id/edSoB"></Button>
+
+    <Button
+        android:id="@+id/BtnChia"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="XuLyChia"
+        android:text="/"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/BtnNhan"
+        app:layout_constraintTop_toBottomOf="@id/edSoB"></Button>
+
+    <TextView
+        android:id="@+id/tvKQ"
+        android:layout_width="163dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/vien"
+        android:gravity="center"
+        android:onClick="ketQua"
+        android:padding="16dp"
+        android:text="KET QUA"
+        android:textColor="#171313"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnCong"></TextView>
+
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/border"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKQ"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
