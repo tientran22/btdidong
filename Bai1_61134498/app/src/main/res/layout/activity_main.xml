@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edCD"
+            android:hint="Nhập chiều dài"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edCR"
+            android:hint="Nhập chiều rộng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnHCN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="HCN"
+        android:text="Tính chu vi HCN"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edCC"
+            android:hint="Nhập chiều cao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edCDay"
+            android:hint="Nhập cạnh đáy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnHBH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="HBH"
+        android:text="Tính diện tích hình bình hành"/>
+    <EditText
+        android:id="@+id/edKq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Kết quả"/>
+
+
+</LinearLayout>
